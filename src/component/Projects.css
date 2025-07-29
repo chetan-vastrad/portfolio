@@ -1,0 +1,168 @@
+.project-section{
+    background-color: black;
+    padding: 50px;
+}
+.project-heading h2{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.project-heading p{
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+}
+.carousel {
+    position: relative;
+    width: 100%;
+    margin: 50px 0 0 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .carousel-image {
+    flex: 1;
+    max-width: 40%; /* Image will take up 50% of the carousel width */
+  }
+  
+  .carousel-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    background-color:black;
+    padding: 50px;
+  }
+  
+  .carousel-text {
+    background:radial-gradient(circle, rgba(61, 206, 254, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    text-align: center;
+    flex: 1;
+    max-width: 50%; /* Text will take up the other 50% */
+    padding: 50px;
+    border-radius: 10px;
+    color: #ffffff;
+  }
+  
+  .carousel-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .carousel-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .carousel-links {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .carousel-links a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+
+  }
+  
+  .carousel-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 30px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  /* Projects */
+  .all-projects{
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .project{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    flex: 1;
+    max-width: 25%;
+  }
+  .project img{
+    width: 100%;
+  }
+  .project h3{
+    margin-top: 20px;
+    text-align: center;
+  }
+  .project p{
+    margin-top: 10px;
+    text-align: center;
+  }
+  .project button{
+    margin-top: 20px;
+    display: flex;
+    justify-self: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 black;
+  }
+  .project button:hover{
+    background-color: #ffffff;
+    color: black;
+    box-shadow: 0 0 10px black;
+  }
+  @media screen and (max-width: 425px){
+    .project-section{
+      padding: 20px;
+    }
+    .project-heading h2{
+      font-size: 1.5rem;
+    }
+    .all-projects{
+      display: block;
+    }
+    .project{
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }

@@ -1,0 +1,89 @@
+.aboout-section{
+    padding: 0 50px 50px;
+}
+.about-header h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.about-header p{
+    font-size: 20px;
+}
+.about-inner{
+    margin-top: 50px;
+    display: flex;
+    gap: 40px;
+    border-radius: 10px;
+    padding: 40px;
+    background: #3DCEFE;
+background: radial-gradient(circle, rgba(61, 206, 254, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+.about-image{
+    width: 50%;
+}
+.about-image img{
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 35px white;
+}
+.about-dis{
+    width: 50%;
+    text-align: right;
+}
+.about-dis h2{
+    margin-bottom: 20px;
+}
+.project-completion{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+}
+.project-completion h3{
+    font-size: 2rem;
+}
+.hiremebtn{
+    background-color: #28292b;
+    padding: 8px;
+    color: #fdffff;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: 0 0 3px #d4d6d8;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.hiremebtn:hover{
+    transform: scale(1.1); 
+  background:  rgba(61, 206, 254, 1);
+}
+@media screen and (max-width: 425px){
+.aboout-section{
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+.about-header h2{
+    font-size: 1.5rem;
+}
+.about-inner{
+    display: block;
+}
+.about-image{
+    width: auto;
+}
+.about-image img{
+    width: 100%;
+}
+.about-inner{
+    padding: 20px;
+}
+.about-dis{
+    width: 100%;
+    text-align: start;
+}
+.project-completion{
+    justify-content: start;
+}
+}

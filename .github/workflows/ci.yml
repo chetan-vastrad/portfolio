@@ -1,0 +1,36 @@
+name: React Build & Deploy
+
+# Trigger the workflow on push to the 'main' branch
+on:
+  push:
+    branches:
+      - main  # Change this if your default branch is not 'main'
+
+# Define the jobs for the workflow
+jobs:
+  build:
+    runs-on: ubuntu-latest  # You can use other runners like macos-latest, windows-latest, etc.
+    
+    # Cache node_modules to speed up builds
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '20.19'  # You can adjust this based on your Node.js version
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build the project
+      run: npm run build  # Uses 'vite build'
+
+    - name: Deploy to Netlify (Example)
+      run: |
+        npm install -g netlify-cli
+        netlify deploy --prod --dir=dist --site=$NETLIFY_SITE_ID --auth=$NETLIFY_AUTH_TOKEN
+      env:
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}

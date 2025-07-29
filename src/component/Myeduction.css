@@ -1,0 +1,66 @@
+.myeduction{
+    padding: 50px;
+    margin-bottom: 50px;
+    background-color:#28292b;
+}
+.myeduction h2{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.myeduction p{
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+}
+.eduction-inner{
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+}
+.degree-img img{
+width: 100px;
+border-radius: 10px;
+}
+.degree-dis h2{
+    color: black;
+}
+.degree-dis p{
+    color: black;
+}
+.eductionfirst{
+    border-left: 4px solid #f34b58;
+}
+.eductionsecond{
+    border-right:4px solid #26a6fe ;
+}
+.edcutionthird{
+border-left: 4px solid #ff4f19;
+}
+@media screen and (max-width: 425px) {
+.myeduction{
+padding: 20px;
+}
+.myeduction h2{
+    font-size: 1.5rem;
+}
+.eduction-inner{
+    display: block;
+    padding: 20px;
+}
+.degree-img{
+    text-align: center;
+    margin:10px 0;
+}
+.degree-dis h2{
+    font-size: 20px;
+}
+.degree-dis p{
+    font-size: 16px;
+}
+}
