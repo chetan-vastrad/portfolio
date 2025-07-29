@@ -1,5 +1,5 @@
 import "./Connectform.css";
-import "./Topheading.css"
+import "./TopHeading.css"
 const Connectform = ({onClose}) => {
 return(
 <div>
