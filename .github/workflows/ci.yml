@@ -1,9 +1,11 @@
 name: React Build & Deploy
 
+# on:
+#   push:
+#     branches:
+#       - main  # Change this if your default branch is not 'main'
 on:
-  push:
-    branches:
-      - main  # Change this if your default branch is not 'main'
+  workflow_dispatch:      
 
 jobs:
   build:
