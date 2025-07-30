@@ -5,7 +5,7 @@ const About = () =>{
       <div>
         <div className="aboout-section">
           <div className="about-header">
-            <h2>🥇 AboutMe</h2>
+            <h2>🥇 About Me</h2>
             <p>
               Academic Milestones & Certifications: Shaping My Expertise in
               Technology and Development
