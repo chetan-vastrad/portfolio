@@ -27,10 +27,10 @@ jobs:
     - name: Build the project
       run: npm run build  # Uses 'vite build'
 
-    - name: Deploy to Netlify (Example)
+    - name: Debug Secrets
       run: |
-        npm install -g netlify-cli
-        netlify deploy --prod --dir=dist --site=$NETLIFY_SITE_ID --auth=$NETLIFY_AUTH_TOKEN
+        echo "NETLIFY_AUTH_TOKEN length: ${#NETLIFY_AUTH_TOKEN}"
+        echo "NETLIFY_SITE_ID: $NETLIFY_SITE_ID"
       env:
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        PERSONAL_ACCESS_TOKENS: ${{ secrets.NETLIFY_AUTH_TOKEN }}
